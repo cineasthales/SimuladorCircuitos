@@ -1,0 +1,353 @@
+.inputs i_9_ i_7_ i_8_ i_5_ i_6_ i_3_ i_4_ i_1_ i_2_ i_0_
+.outputs o_1_ o_2_ o_0_ o_3_
+.gate not a=i_9_ O=[15086]
+.gate not a=i_0_ O=[14839]
+.gate nor2 a=i_1_ b=i_2_ O=[14646]
+.gate nand2 a=[14839] b=[14646] O=[14843]
+.gate not a=i_4_ O=[14844]
+.gate nor2 a=i_5_ b=i_3_ O=[14754]
+.gate nand2 a=[14844] b=[14754] O=[14848]
+.gate not a=i_6_ O=[14849]
+.gate not a=i_7_ O=[14850]
+.gate nor2 a=i_8_ b=[14850] O=[14782]
+.gate nand2 a=[14849] b=[14782] O=[14853]
+.gate nor2 a=[14848] b=[14853] O=[14626]
+.gate not a=[14626] O=[16040]
+.gate nor2 a=[14843] b=[16040] O=n_n42
+.gate nand2 a=[15086] b=n_n42 O=[15534]
+.gate not a=[14843] O=[15685]
+.gate not a=i_3_ O=[14846]
+.gate nor2 a=i_5_ b=[14846] O=[14820]
+.gate nand2 a=[14844] b=[14820] O=[14857]
+.gate nor2 a=i_7_ b=i_8_ O=[14650]
+.gate nand2 a=[14849] b=[14650] O=[14859]
+.gate nor2 a=[14857] b=[14859] O=[14642]
+.gate nand2 a=[15685] b=[14642] O=[14861]
+.gate nor2 a=i_9_ b=[14861] O=n_n154
+.gate not a=i_1_ O=[14840]
+.gate nor2 a=i_2_ b=[14840] O=[14792]
+.gate nand2 a=[14839] b=[14792] O=[14863]
+.gate not a=[14863] O=[15711]
+.gate not a=i_8_ O=[14851]
+.gate nor2 a=i_7_ b=[14851] O=[14636]
+.gate nand2 a=[14849] b=[14636] O=[14865]
+.gate nor2 a=[14857] b=[14865] O=[14632]
+.gate nand2 a=[15711] b=[14632] O=[14867]
+.gate nor2 a=i_9_ b=[14867] O=n_n156
+.gate nor2 a=n_n154 b=n_n156 O=[14620]
+.gate nand2 a=[15534] b=[14620] O=[14869]
+.gate not a=i_2_ O=[14841]
+.gate nor2 a=i_1_ b=[14841] O=[14778]
+.gate nand2 a=i_0_ b=[14778] O=[14871]
+.gate not a=[14871] O=[15801]
+.gate nor2 a=i_5_ b=i_3_ O=[14696]
+.gate nand2 a=i_4_ b=[14696] O=[14873]
+.gate nor2 a=i_8_ b=[14850] O=[14834]
+.gate nand2 a=i_6_ b=[14834] O=[14875]
+.gate nor2 a=[14873] b=[14875] O=[14660]
+.gate nand2 a=[15801] b=[14660] O=[14877]
+.gate nor2 a=i_9_ b=[14877] O=n_n162
+.gate nor2 a=[14840] b=[14841] O=[14830]
+.gate nand2 a=i_0_ b=[14830] O=[14879]
+.gate nor2 a=i_7_ b=[14851] O=[14676]
+.gate nand2 a=i_6_ b=[14676] O=[14881]
+.gate nor2 a=i_5_ b=[14846] O=[14838]
+.gate nand2 a=i_4_ b=[14838] O=[14883]
+.gate nor2 a=[14881] b=[14883] O=[14672]
+.gate not a=[14672] O=[16058]
+.gate nor2 a=[14879] b=[16058] O=n_n25
+.gate nand2 a=[15086] b=n_n25 O=[15425]
+.gate nor2 a=[14881] b=[14883] O=[14666]
+.gate not a=[14666] O=[16056]
+.gate nor2 a=[14863] b=[16056] O=n_n23
+.gate nand2 a=[15086] b=n_n23 O=[15427]
+.gate nand2 a=[15425] b=[15427] O=[14888]
+.gate nor2 a=n_n162 b=[14888] O=n_n91
+.gate nor2 a=[14853] b=[14857] O=[14686]
+.gate nand2 a=[15711] b=[14686] O=[14891]
+.gate nor2 a=i_9_ b=[14891] O=n_n157
+.gate nor2 a=i_1_ b=i_2_ O=[14706]
+.gate nand2 a=i_0_ b=[14706] O=[14893]
+.gate nor2 a=[14853] b=[14857] O=[14702]
+.gate not a=[14702] O=[16070]
+.gate nor2 a=[14893] b=[16070] O=n_n33
+.gate nand2 a=[15086] b=n_n33 O=[15556]
+.gate nor2 a=[14850] b=[14851] O=[14816]
+.gate nand2 a=i_6_ b=[14816] O=[14897]
+.gate nor2 a=[14873] b=[14897] O=[14692]
+.gate not a=[14692] O=[16066]
+.gate nor2 a=[14879] b=[16066] O=n_n27
+.gate nand2 a=[15086] b=n_n27 O=[15558]
+.gate nand2 a=[15556] b=[15558] O=[14900]
+.gate nor2 a=n_n157 b=[14900] O=n_n92
+.gate nand2 a=n_n91 b=n_n92 O=[14902]
+.gate nor2 a=[14869] b=[14902] O=n_n86
+.gate nand2 a=i_1_ b=i_2_ O=[14904]
+.gate nor2 a=i_0_ b=[14904] O=n_n22
+.gate nor2 a=[14883] b=[14897] O=[14734]
+.gate nand2 a=n_n22 b=[14734] O=[14907]
+.gate nor2 a=i_9_ b=[14907] O=n_n165
+.gate nor2 a=[14848] b=[14853] O=[14750]
+.gate not a=[14750] O=[16088]
+.gate nor2 a=[14871] b=[16088] O=n_n19
+.gate nand2 a=[15086] b=n_n19 O=[15368]
+.gate nor2 a=[14883] b=[14897] O=[14744]
+.gate not a=[14744] O=[16086]
+.gate nor2 a=[14871] b=[16086] O=n_n18
+.gate nand2 a=[15086] b=n_n18 O=[15371]
+.gate nand2 a=[15368] b=[15371] O=[14912]
+.gate nor2 a=n_n165 b=[14912] O=n_n90
+.gate nor2 a=i_2_ b=[14840] O=[14806]
+.gate nand2 a=i_0_ b=[14806] O=[14915]
+.gate nor2 a=[14883] b=[14897] O=[14802]
+.gate not a=[14802] O=[16110]
+.gate nor2 a=[14915] b=[16110] O=n_n17
+.gate nand2 a=[15086] b=n_n17 O=[15655]
+.gate not a=[14879] O=[15741]
+.gate nor2 a=[14875] b=[14883] O=[14826]
+.gate nand2 a=[15741] b=[14826] O=[14919]
+.gate nor2 a=i_9_ b=[14919] O=n_n169
+.gate nor2 a=[14857] b=[14897] O=[14812]
+.gate nand2 a=[15741] b=[14812] O=[14921]
+.gate nor2 a=i_9_ b=[14921] O=n_n170
+.gate nor2 a=n_n169 b=n_n170 O=[14796]
+.gate nand2 a=[15655] b=[14796] O=[14923]
+.gate nor2 a=[14850] b=[14851] O=[14768]
+.gate nand2 a=[14849] b=[14768] O=[14925]
+.gate nor2 a=[14883] b=[14925] O=[14764]
+.gate not a=[14764] O=[16094]
+.gate nor2 a=[14879] b=[16094] O=n_n13
+.gate nand2 a=[15086] b=n_n13 O=[15641]
+.gate nor2 a=[14857] b=[14897] O=[14788]
+.gate nand2 a=[15711] b=[14788] O=[14929]
+.gate nor2 a=i_9_ b=[14929] O=n_n172
+.gate nor2 a=[14853] b=[14883] O=[14774]
+.gate nand2 a=[15801] b=[14774] O=[14931]
+.gate nor2 a=i_9_ b=[14931] O=n_n173
+.gate nor2 a=n_n172 b=n_n173 O=[14758]
+.gate nand2 a=[15641] b=[14758] O=[14933]
+.gate nor2 a=[14923] b=[14933] O=[14724]
+.gate nand2 a=n_n90 b=[14724] O=[14935]
+.gate nor2 a=[14853] b=[14857] O=[14720]
+.gate not a=[14720] O=[16076]
+.gate nor2 a=[14879] b=[16076] O=n_n7
+.gate nand2 a=[15086] b=n_n7 O=[15629]
+.gate nor2 a=[14857] b=[14925] O=[14714]
+.gate not a=[14714] O=[16074]
+.gate nor2 a=[14915] b=[16074] O=n_n8
+.gate nand2 a=[15086] b=n_n8 O=[15631]
+.gate nand2 a=[15629] b=[15631] O=[14940]
+.gate nor2 a=[14935] b=[14940] O=[14612]
+.gate nand2 a=n_n86 b=[14612] O=o_1_
+.gate nand2 a=[14849] b=[14846] O=[14942]
+.gate nor2 a=[14840] b=[14942] O=n_n80
+.gate nand2 a=[15086] b=n_n80 O=[15460]
+.gate not a=i_5_ O=[14845]
+.gate nand2 a=[15086] b=[14845] O=[14944]
+.gate nor2 a=i_3_ b=i_4_ O=[14460]
+.gate nand2 a=i_1_ b=[14460] O=[14946]
+.gate nor2 a=[14944] b=[14946] O=n_n127
+.gate nand2 a=[15086] b=[14851] O=[14947]
+.gate not a=[14947] O=[15397]
+.gate nand2 a=[14845] b=i_6_ O=[14948]
+.gate nor2 a=i_0_ b=[14948] O=n_n77
+.gate nand2 a=[15397] b=n_n77 O=[15525]
+.gate not a=[15525] O=[15526]
+.gate nor2 a=n_n127 b=[15526] O=[14442]
+.gate nand2 a=[15460] b=[14442] O=[14951]
+.gate nand2 a=[15086] b=i_8_ O=[14952]
+.gate nor2 a=i_5_ b=i_1_ O=[14470]
+.gate nand2 a=[14839] b=[14470] O=[14954]
+.gate nor2 a=[14952] b=[14954] O=n_n132
+.gate nand2 a=[14850] b=[14845] O=[14955]
+.gate nor2 a=[14849] b=[14955] O=n_n68
+.gate nand2 a=[15397] b=n_n68 O=[15411]
+.gate not a=[14944] O=[15464]
+.gate nand2 a=[14846] b=i_1_ O=[14957]
+.gate nor2 a=i_2_ b=[14957] O=n_n69
+.gate nand2 a=[15464] b=n_n69 O=[15474]
+.gate nand2 a=[15411] b=[15474] O=[14959]
+.gate nor2 a=n_n132 b=[14959] O=n_n101
+.gate nor2 a=i_5_ b=i_1_ O=[14492]
+.gate nand2 a=[14841] b=[14492] O=[14962]
+.gate nor2 a=[14952] b=[14962] O=n_n129
+.gate nand2 a=[15086] b=[14850] O=[14963]
+.gate nor2 a=i_5_ b=i_6_ O=[14504]
+.gate nand2 a=i_4_ b=[14504] O=[14965]
+.gate nor2 a=[14963] b=[14965] O=n_n130
+.gate nor2 a=i_5_ b=i_4_ O=[14498]
+.gate nand2 a=[14840] b=[14498] O=[14967]
+.gate nor2 a=[14952] b=[14967] O=n_n131
+.gate nor2 a=n_n130 b=n_n131 O=[14486]
+.gate not a=[14486] O=[15992]
+.gate nor2 a=n_n129 b=[15992] O=n_n102
+.gate nand2 a=n_n101 b=n_n102 O=[14970]
+.gate nor2 a=[14951] b=[14970] O=n_n96
+.gate nand2 a=[15086] b=[14849] O=[14972]
+.gate not a=[14972] O=[15494]
+.gate nand2 a=[14845] b=i_4_ O=[14973]
+.gate nor2 a=i_2_ b=[14973] O=n_n0
+.gate nand2 a=[15494] b=n_n0 O=[15583]
+.gate nand2 a=[14844] b=i_2_ O=[14975]
+.gate nor2 a=i_0_ b=[14975] O=n_n3
+.gate nand2 a=[15464] b=n_n3 O=[15449]
+.gate nor2 a=i_5_ b=i_6_ O=[14528]
+.gate nand2 a=[14840] b=[14528] O=[14978]
+.gate nor2 a=[14952] b=[14978] O=n_n181
+.gate nor2 a=i_5_ b=[14849] O=[14522]
+.gate nand2 a=[14844] b=[14522] O=[14980]
+.gate not a=[14980] O=[15633]
+.gate nand2 a=[15397] b=[15633] O=[15622]
+.gate not a=[15622] O=[15623]
+.gate nor2 a=n_n181 b=[15623] O=[14510]
+.gate nand2 a=[15449] b=[14510] O=[14982]
+.gate not a=[14982] O=[15586]
+.gate nand2 a=[15583] b=[15586] O=[14983]
+.gate nand2 a=[14845] b=i_6_ O=[14984]
+.gate nor2 a=i_2_ b=[14984] O=n_n67
+.gate nand2 a=[15397] b=n_n67 O=[15363]
+.gate nand2 a=[14846] b=i_1_ O=[14986]
+.gate nor2 a=i_0_ b=[14986] O=n_n66
+.gate nand2 a=[15464] b=n_n66 O=[15357]
+.gate not a=[15357] O=[15358]
+.gate nor2 a=i_7_ b=i_5_ O=[14556]
+.gate nand2 a=[14840] b=[14556] O=[14989]
+.gate nor2 a=[14952] b=[14989] O=n_n137
+.gate nor2 a=[15358] b=n_n137 O=[14544]
+.gate nand2 a=[15363] b=[14544] O=[14991]
+.gate not a=[14991] O=[15366]
+.gate nand2 a=[14849] b=i_4_ O=[14992]
+.gate nor2 a=i_0_ b=[14992] O=n_n64
+.gate nand2 a=[15086] b=n_n64 O=[15421]
+.gate nor2 a=i_5_ b=i_4_ O=[14606]
+.gate nand2 a=i_2_ b=[14606] O=[14995]
+.gate nor2 a=[14963] b=[14995] O=n_n139
+.gate nor2 a=i_9_ b=[14845] O=n_n152
+.gate nor2 a=n_n139 b=n_n152 O=[14592]
+.gate nand2 a=[15421] b=[14592] O=[14997]
+.gate nor2 a=i_9_ b=i_7_ O=[14574]
+.gate nand2 a=[14846] b=[14574] O=[15596]
+.gate nor2 a=i_5_ b=i_3_ O=[14580]
+.gate nand2 a=i_1_ b=[14580] O=[15000]
+.gate not a=[15000] O=[15498]
+.gate nand2 a=[15397] b=[15498] O=[15455]
+.gate not a=[15455] O=[15456]
+.gate nor2 a=i_5_ b=i_2_ O=[14588]
+.gate nand2 a=i_0_ b=[14588] O=[15002]
+.gate nor2 a=[14963] b=[15002] O=n_n178
+.gate nor2 a=[15456] b=n_n178 O=[14570]
+.gate nand2 a=[15596] b=[14570] O=[15004]
+.gate nor2 a=[14997] b=[15004] O=[14540]
+.gate nand2 a=[15366] b=[14540] O=[15006]
+.gate nor2 a=[14983] b=[15006] O=[14434]
+.gate nand2 a=n_n96 b=[14434] O=o_2_
+.gate nand2 a=[14846] b=[14840] O=[15008]
+.gate nor2 a=i_2_ b=[15008] O=n_n6
+.gate nor2 a=i_9_ b=[14850] O=[14426]
+.gate nand2 a=[14851] b=[14426] O=[15011]
+.gate nor2 a=i_5_ b=i_6_ O=[14430]
+.gate nand2 a=[14844] b=[14430] O=[15013]
+.gate nor2 a=[15011] b=[15013] O=[14418]
+.gate nand2 a=n_n6 b=[14418] O=[15377]
+.gate nand2 a=i_1_ b=i_3_ O=[15015]
+.gate nor2 a=[14839] b=[15015] O=n_n57
+.gate nor2 a=i_9_ b=[14850] O=[14350]
+.gate nand2 a=i_8_ b=[14350] O=[15018]
+.gate nor2 a=[15013] b=[15018] O=[14326]
+.gate nand2 a=n_n57 b=[14326] O=[15568]
+.gate nor2 a=[14840] b=[14846] O=[14346]
+.gate nand2 a=[14841] b=[14346] O=[15021]
+.gate not a=[15018] O=[15855]
+.gate nand2 a=[15633] b=[15855] O=[15022]
+.gate nor2 a=[15021] b=[15022] O=n_n146
+.gate nor2 a=i_9_ b=[14851] O=[14338]
+.gate nand2 a=i_6_ b=[14338] O=[15024]
+.gate nor2 a=[14883] b=[15024] O=[14334]
+.gate not a=[14334] O=[15922]
+.gate nor2 a=[14863] b=[15922] O=n_n147
+.gate nor2 a=n_n146 b=n_n147 O=[14322]
+.gate nand2 a=[15568] b=[14322] O=[15027]
+.gate nor2 a=i_5_ b=i_6_ O=[14402]
+.gate nand2 a=i_3_ b=[14402] O=[15029]
+.gate nor2 a=[15011] b=[15029] O=[14398]
+.gate not a=[14398] O=[15954]
+.gate nor2 a=[14879] b=[15954] O=n_n149
+.gate nor2 a=[14883] b=[15011] O=[14414]
+.gate nand2 a=[15801] b=[14414] O=[15538]
+.gate nor2 a=i_9_ b=i_8_ O=[14410]
+.gate nand2 a=[14849] b=[14410] O=[15033]
+.gate nor2 a=[14857] b=[15033] O=[14406]
+.gate nand2 a=[15685] b=[14406] O=[15540]
+.gate nand2 a=[15538] b=[15540] O=[15035]
+.gate nor2 a=n_n149 b=[15035] O=n_n83
+.gate nand2 a=[14841] b=i_3_ O=[15037]
+.gate nor2 a=i_0_ b=[15037] O=n_n39
+.gate nor2 a=i_9_ b=i_7_ O=[14366]
+.gate nand2 a=[14851] b=[14366] O=[15040]
+.gate nor2 a=[15013] b=[15040] O=[14358]
+.gate nand2 a=n_n39 b=[14358] O=[15647]
+.gate not a=[15647] O=[15648]
+.gate nor2 a=i_9_ b=[14850] O=[14390]
+.gate nand2 a=i_6_ b=[14390] O=[15043]
+.gate nor2 a=[14873] b=[15043] O=[14386]
+.gate nand2 a=[15801] b=[14386] O=[15643]
+.gate nand2 a=i_1_ b=i_3_ O=[15045]
+.gate nor2 a=i_0_ b=[15045] O=n_n31
+.gate nor2 a=i_5_ b=[14849] O=[14382]
+.gate nand2 a=i_4_ b=[14382] O=[15048]
+.gate nor2 a=i_9_ b=i_7_ O=[14378]
+.gate nand2 a=i_8_ b=[14378] O=[15050]
+.gate nor2 a=[15048] b=[15050] O=[14370]
+.gate nand2 a=n_n31 b=[14370] O=[15645]
+.gate nand2 a=[15643] b=[15645] O=[15052]
+.gate nor2 a=[15648] b=[15052] O=n_n82
+.gate nand2 a=n_n83 b=n_n82 O=[15054]
+.gate nor2 a=[15027] b=[15054] O=n_n81
+.gate nand2 a=[15377] b=n_n81 O=o_0_
+.gate nor2 a=n_n129 b=[15526] O=[14250]
+.gate not a=[14250] O=[15888]
+.gate nor2 a=n_n127 b=[15888] O=n_n115
+.gate not a=n_n115 O=[15619]
+.gate not a=[15474] O=[15476]
+.gate nand2 a=[15363] b=[15411] O=[15058]
+.gate nor2 a=[15476] b=[15058] O=n_n113
+.gate nor2 a=n_n131 b=n_n132 O=[14258]
+.gate not a=[14258] O=[15892]
+.gate nor2 a=n_n130 b=[15892] O=n_n114
+.gate nand2 a=n_n113 b=n_n114 O=[15062]
+.gate nor2 a=[15619] b=[15062] O=n_n106
+.gate nor2 a=n_n137 b=n_n139 O=[14280]
+.gate nand2 a=[15357] b=[14280] O=[15065]
+.gate nor2 a=i_4_ b=[14846] O=[14304]
+.gate nand2 a=[14840] b=[14304] O=[15067]
+.gate nor2 a=[14944] b=[15067] O=n_n140
+.gate not a=[14963] O=[15443]
+.gate nand2 a=[15443] b=[15498] O=[15516]
+.gate nand2 a=[14845] b=i_3_ O=[15068]
+.gate nor2 a=i_0_ b=[15068] O=n_n61
+.gate nand2 a=[15494] b=n_n61 O=[15574]
+.gate nand2 a=[15516] b=[15574] O=[15070]
+.gate nor2 a=n_n140 b=[15070] O=n_n111
+.gate nor2 a=[14857] b=[14963] O=n_n143
+.gate nand2 a=[14845] b=i_3_ O=[15072]
+.gate nor2 a=i_2_ b=[15072] O=n_n58
+.gate nand2 a=[15397] b=n_n58 O=[15598]
+.gate not a=[14873] O=[15663]
+.gate nand2 a=[15663] b=[15494] O=[15600]
+.gate nand2 a=[15598] b=[15600] O=[15074]
+.gate nor2 a=n_n143 b=[15074] O=n_n110
+.gate nand2 a=n_n111 b=n_n110 O=[15076]
+.gate nor2 a=[15065] b=[15076] O=n_n105
+.gate not a=n_n105 O=[15551]
+.gate not a=[15377] O=[15378]
+.gate nor2 a=[15378] b=n_n178 O=[14266]
+.gate nand2 a=[15368] b=[14266] O=[15079]
+.gate not a=[15079] O=[15480]
+.gate not a=[15449] O=[15450]
+.gate nor2 a=[15450] b=n_n181 O=[14272]
+.gate nand2 a=[15455] b=[14272] O=[15081]
+.gate nand2 a=[15583] b=[15622] O=[15082]
+.gate nor2 a=[15081] b=[15082] O=[14262]
+.gate nand2 a=[15480] b=[14262] O=[15084]
+.gate nor2 a=[15551] b=[15084] O=[14242]
+.gate nand2 a=n_n106 b=[14242] O=o_3_

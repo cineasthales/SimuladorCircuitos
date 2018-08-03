@@ -1,0 +1,163 @@
+.inputs a0 b0 a1 b1 a2 b2 a3 b3
+.outputs p0 p1 p2 p3 p4 p5 p6 p7
+
+.gate and2 a=a0 b=b0 O=p0
+
+.gate and2 a=a1 b=b0 O=a1b0
+
+.gate and2 a=a2 b=b0 O=a2b0
+
+.gate and2 a=a3 b=b0 O=a3b0
+
+.gate and2 a=a0 b=b1 O=a0b1
+.gate not a=a0b1 O=n01_1
+.gate not a=a1b0 O=n01_2
+.gate and2 a=a0b1 b=n01_2 O=n01_3
+.gate and2 a=a1b0 b=n01_1 O=n01_4
+.gate or2 a=n01_3 b=n01_4 O=p1
+.gate and2 a=a0b1 b=a1b0 O=c_a0b1
+
+.gate and2 a=a1 b=b1 O=a1b1
+.gate not a=a1b1 O=n11_1
+.gate not a=a2b0 O=n11_2
+.gate and2 a=a1b1 b=n11_2 O=n11_3
+.gate and2 a=a2b0 b=n11_1 O=n11_4
+.gate or2 a=n11_3 b=n11_4 O=n11_5
+.gate not a=c_a0b1 O=n11_6
+.gate not a=n11_5 O=n11_7
+.gate and2 a=c_a0b1 b=n11_7 O=n11_8
+.gate and2 a=n11_5 b=n11_6 O=n11_9
+.gate or2 a=n11_8 b=n11_9 O=s_a1b1
+.gate and2 a=a1b1 b=a2b0 O=n11_10
+.gate and2 a=c_a0b1 b=n11_5 O=n11_11
+.gate or2 a=n11_10 b=n11_11 O=c_a1b1
+
+.gate and2 a=a2 b=b1 O=a2b1
+.gate not a=a2b1 O=n21_1
+.gate not a=a3b0 O=n21_2
+.gate and2 a=a2b1 b=n21_2 O=n21_3
+.gate and2 a=a3b0 b=n21_1 O=n21_4
+.gate or2 a=n21_3 b=n21_4 O=n21_5
+.gate not a=c_a1b1 O=n21_6
+.gate not a=n21_5 O=n21_7
+.gate and2 a=c_a1b1 b=n21_7 O=n21_8
+.gate and2 a=n21_5 b=n21_6 O=n21_9
+.gate or2 a=n21_8 b=n21_9 O=s_a2b1
+.gate and2 a=a2b1 b=a3b0 O=n21_10
+.gate and2 a=c_a1b1 b=n21_5 O=n21_11
+.gate or2 a=n21_10 b=n21_11 O=c_a2b1
+
+.gate and2 a=a3 b=b1 O=a3b1
+.gate not a=a3b1 O=n31_1
+.gate not a=c_a2b1 O=n31_2
+.gate and2 a=a3b1 b=n31_2 O=n31_3
+.gate and2 a=c_a2b1 b=n31_1 O=n31_4
+.gate or2 a=n31_3 b=n31_4 O=s_a3b1
+.gate and2 a=a3b1 b=c_a2b1 O=c_a3b1
+
+.gate and2 a=a0 b=b2 O=a0b2
+.gate not a=a0b2 O=n02_1
+.gate not a=s_a1b1 O=n02_2
+.gate and2 a=a0b2 b=n02_2 O=n02_3
+.gate and2 a=s_a1b1 b=n02_1 O=n02_4
+.gate or2 a=n02_3 b=n02_4 O=p2
+.gate and2 a=a0b2 b=s_a1b1 O=c_a0b2
+
+.gate and2 a=a1 b=b2 O=a1b2
+.gate not a=a1b2 O=n12_1
+.gate not a=s_a2b1 O=n12_2
+.gate and2 a=a1b2 b=n12_2 O=n12_3
+.gate and2 a=s_a2b1 b=n12_1 O=n12_4
+.gate or2 a=n12_3 b=n12_4 O=n12_5
+.gate not a=c_a0b2 O=n12_6
+.gate not a=n12_5 O=n12_7
+.gate and2 a=c_a0b2 b=n12_7 O=n12_8
+.gate and2 a=n12_5 b=n12_6 O=n12_9
+.gate or2 a=n12_8 b=n12_9 O=s_a1b2
+.gate and2 a=a1b2 b=s_a2b1 O=n12_10
+.gate and2 a=c_a0b2 b=n12_5 O=n12_11
+.gate or2 a=n12_10 b=n12_11 O=c_a1b2
+
+.gate and2 a=a2 b=b2 O=a2b2
+.gate not a=a2b2 O=n22_1
+.gate not a=s_a3b1 O=n22_2
+.gate and2 a=a2b2 b=n22_2 O=n22_3
+.gate and2 a=s_a3b1 b=n22_1 O=n22_4
+.gate or2 a=n22_3 b=n22_4 O=n22_5
+.gate not a=c_a1b2 O=n22_6
+.gate not a=n22_5 O=n22_7
+.gate and2 a=c_a1b2 b=n22_7 O=n22_8
+.gate and2 a=n22_5 b=n22_6 O=n22_9
+.gate or2 a=n22_8 b=n22_9 O=s_a2b2
+.gate and2 a=a2b2 b=s_a3b1 O=n22_10
+.gate and2 a=c_a1b2 b=n22_5 O=n22_11
+.gate or2 a=n22_10 b=n22_11 O=c_a2b2
+
+.gate and2 a=a3 b=b2 O=a3b2
+.gate not a=a3b2 O=n32_1
+.gate not a=c_a3b1 O=n32_2
+.gate and2 a=a3b2 b=n32_2 O=n32_3
+.gate and2 a=c_a3b1 b=n32_1 O=n32_4
+.gate or2 a=n32_3 b=n32_4 O=n32_5
+.gate not a=c_a2b2 O=n32_6
+.gate not a=n32_5 O=n32_7
+.gate and2 a=c_a2b2 b=n32_7 O=n32_8
+.gate and2 a=n32_5 b=n32_6 O=n32_9
+.gate or2 a=n32_8 b=n32_9 O=s_a3b2
+.gate and2 a=a3b2 b=c_a3b1 O=n32_10
+.gate and2 a=c_a2b2 b=n32_5 O=n32_11
+.gate or2 a=n32_10 b=n32_11 O=c_a3b2
+
+.gate and2 a=a0 b=b3 O=a0b3
+.gate not a=a0b3 O=n03_1
+.gate not a=s_a1b2 O=n03_2
+.gate and2 a=a0b3 b=n03_2 O=n03_3
+.gate and2 a=s_a1b2 b=n03_1 O=n03_4
+.gate or2 a=n03_3 b=n03_4 O=p3
+.gate and2 a=a0b3 b=s_a1b2 O=c_a0b3
+
+.gate and2 a=a1 b=b3 O=a1b3
+.gate not a=a1b3 O=n13_1
+.gate not a=s_a2b2 O=n13_2
+.gate and2 a=a1b3 b=n13_2 O=n13_3
+.gate and2 a=s_a2b2 b=n13_1 O=n13_4
+.gate or2 a=n13_3 b=n13_4 O=n13_5
+.gate not a=c_a0b3 O=n13_6
+.gate not a=n13_5 O=n13_7
+.gate and2 a=c_a0b3 b=n13_7 O=n13_8
+.gate and2 a=n13_5 b=n13_6 O=n13_9
+.gate or2 a=n13_8 b=n13_9 O=p4
+.gate and2 a=a1b3 b=s_a2b2 O=n13_10
+.gate and2 a=c_a0b3 b=n13_5 O=n13_11
+.gate or2 a=n13_10 b=n13_11 O=c_a1b3
+
+.gate and2 a=a2 b=b3 O=a2b3
+.gate not a=a2b3 O=n23_1
+.gate not a=s_a3b2 O=n23_2
+.gate and2 a=a2b3 b=n23_2 O=n23_3
+.gate and2 a=s_a3b2 b=n23_1 O=n23_4
+.gate or2 a=n23_3 b=n23_4 O=n23_5
+.gate not a=c_a1b3 O=n23_6
+.gate not a=n23_5 O=n23_7
+.gate and2 a=c_a1b3 b=n23_7 O=n23_8
+.gate and2 a=n23_5 b=n23_6 O=n23_9
+.gate or2 a=n23_8 b=n23_9 O=p5
+.gate and2 a=a2b3 b=s_a3b2 O=n23_10
+.gate and2 a=c_a1b3 b=n23_5 O=n23_11
+.gate or2 a=n23_10 b=n23_11 O=c_a2b3
+
+.gate and2 a=a3 b=b3 O=a3b3
+.gate not a=a3b3 O=n33_1
+.gate not a=c_a3b2 O=n33_2
+.gate and2 a=a3b3 b=n33_2 O=n33_3
+.gate and2 a=c_a3b2 b=n33_1 O=n33_4
+.gate or2 a=n33_3 b=n33_4 O=n33_5
+.gate not a=c_a2b3 O=n33_6
+.gate not a=n33_5 O=n33_7
+.gate and2 a=c_a2b3 b=n33_7 O=n33_8
+.gate and2 a=n33_5 b=n33_6 O=n33_9
+.gate or2 a=n33_8 b=n33_9 O=p6
+.gate and2 a=a3b3 b=c_a3b2 O=n33_10
+.gate and2 a=c_a2b3 b=n33_5 O=n33_11
+.gate or2 a=n33_10 b=n33_11 O=p7
+

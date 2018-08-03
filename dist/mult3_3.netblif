@@ -1,0 +1,77 @@
+.inputs a0 b0 a1 b1 a2 b2
+.outputs p0 p1 p2 p3 p4 p5
+
+.gate and2 a=a0 b=b0 O=p0
+
+.gate and2 a=a1 b=b0 O=a1b0
+
+.gate and2 a=a2 b=b0 O=a2b0
+
+.gate and2 a=a0 b=b1 O=a0b1
+.gate not a=a0b1 O=n01_1
+.gate not a=a1b0 O=n01_2
+.gate and2 a=a0b1 b=n01_2 O=n01_3
+.gate and2 a=a1b0 b=n01_1 O=n01_4
+.gate or2 a=n01_3 b=n01_4 O=p1
+.gate and2 a=a0b1 b=a1b0 O=c_a0b1
+
+.gate and2 a=a1 b=b1 O=a1b1
+.gate not a=a1b1 O=n11_1
+.gate not a=a2b0 O=n11_2
+.gate and2 a=a1b1 b=n11_2 O=n11_3
+.gate and2 a=a2b0 b=n11_1 O=n11_4
+.gate or2 a=n11_3 b=n11_4 O=n11_5
+.gate not a=c_a0b1 O=n11_6
+.gate not a=n11_5 O=n11_7
+.gate and2 a=c_a0b1 b=n11_7 O=n11_8
+.gate and2 a=n11_5 b=n11_6 O=n11_9
+.gate or2 a=n11_8 b=n11_9 O=s_a1b1
+.gate and2 a=a1b1 b=a2b0 O=n11_10
+.gate and2 a=c_a0b1 b=n11_5 O=n11_11
+.gate or2 a=n11_10 b=n11_11 O=c_a1b1
+
+.gate and2 a=a2 b=b1 O=a2b1
+.gate not a=a2b1 O=n21_1
+.gate not a=c_a1b1 O=n21_2
+.gate and2 a=a2b1 b=n21_2 O=n21_3
+.gate and2 a=c_a1b1 b=n21_1 O=n21_4
+.gate or2 a=n21_3 b=n21_4 O=s_a2b1
+.gate and2 a=a2b1 b=c_a1b1 O=c_a2b1
+
+.gate and2 a=a0 b=b2 O=a0b2
+.gate not a=a0b2 O=n02_1
+.gate not a=s_a1b1 O=n02_2
+.gate and2 a=a0b2 b=n02_2 O=n02_3
+.gate and2 a=s_a1b1 b=n02_1 O=n02_4
+.gate or2 a=n02_3 b=n02_4 O=p2
+.gate and2 a=a0b2 b=s_a1b1 O=c_a0b2
+
+.gate and2 a=a1 b=b2 O=a1b2
+.gate not a=a1b2 O=n12_1
+.gate not a=s_a2b1 O=n12_2
+.gate and2 a=a1b2 b=n12_2 O=n12_3
+.gate and2 a=s_a2b1 b=n12_1 O=n12_4
+.gate or2 a=n12_3 b=n12_4 O=n12_5
+.gate not a=c_a0b2 O=n12_6
+.gate not a=n12_5 O=n12_7
+.gate and2 a=c_a0b2 b=n12_7 O=n12_8
+.gate and2 a=n12_5 b=n12_6 O=n12_9
+.gate or2 a=n12_8 b=n12_9 O=p3
+.gate and2 a=a1b2 b=s_a2b1 O=n12_10
+.gate and2 a=c_a0b2 b=n12_5 O=n12_11
+.gate or2 a=n12_10 b=n12_11 O=c_a1b2
+
+.gate and2 a=a2 b=b2 O=a2b2
+.gate not a=a2b2 O=n22_1
+.gate not a=c_a2b1 O=n22_2
+.gate and2 a=a2b2 b=n22_2 O=n22_3
+.gate and2 a=c_a2b1 b=n22_1 O=n22_4
+.gate or2 a=n22_3 b=n22_4 O=n22_5
+.gate not a=c_a1b2 O=n22_6
+.gate not a=n22_5 O=n22_7
+.gate and2 a=c_a1b2 b=n22_7 O=n22_8
+.gate and2 a=n22_5 b=n22_6 O=n22_9
+.gate or2 a=n22_8 b=n22_9 O=p4
+.gate and2 a=a2b2 b=c_a2b1 O=n22_10
+.gate and2 a=c_a1b2 b=n22_5 O=n22_11
+.gate or2 a=n22_10 b=n22_11 O=p5

@@ -1,0 +1,3 @@
+.inputs i0
+.outputs s0
+.gate not a=i0 O=s0

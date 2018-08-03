@@ -1,0 +1,6 @@
+.inputs i0 i1 i2 i3
+.outputs s0
+.gate and2 a=i0 b=i1 O=n1
+.gate or2 a=n1 b=i2 O=n2
+.gate not a=i3 O=n3
+.gate and2 a=n2 b=n3 O=s0

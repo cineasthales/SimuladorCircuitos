@@ -1,0 +1,19 @@
+.inputs a0 b0 a1 b1 
+.outputs p0 p1 p2 p3 
+.gate and2 a=a0 b=b0 O=p0
+.gate and2 a=a1 b=b0 O=a1b0
+.gate and2 a=a0 b=b1 O=a0b1
+.gate not a=a0b1 O=n01_1
+.gate not a=a1b0 O=n01_2
+.gate and2 a=a0b1 b=n01_2 O=n01_3
+.gate and2 a=a1b0 b=n01_1 O=n01_4
+.gate or2 a=n01_3 b=n01_4 O=p1
+.gate and2 a=a0b1 b=a1b0 O=c_a0b1
+.gate and2 a=a1 b=b1 O=a1b1
+.gate not a=a1b1 O=n11_1
+.gate not a=c_a0b1 O=n11_2
+.gate and2 a=a1b1 b=n11_2 O=n11_3
+.gate and2 a=c_a0b1 b=n11_1 O=n11_4
+.gate or2 a=n11_3 b=n11_4 O=p2
+.gate and2 a=a1b1 b=c_a0b1 O=p3
+

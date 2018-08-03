@@ -1,0 +1,40 @@
+.inputs c0 a0 b0 a1 b1
+.outputs s0 s1 c2
+
+.gate not a=c0 O=n12_1
+.gate not a=n13_1 O=n11_1
+.gate and2 a=n11_1 b=c0 O=n15_1
+.gate and2 a=n13_1 b=n12_1 O=n16_1
+.gate or2 a=n15_1 b=n16_1 O=s0
+
+.gate not a=a0 O=n2_1
+.gate not a=b0 O=n1_1
+.gate and2 a=n1_1 b=a0 O=n5_1
+.gate and2 a=b0 b=n2_1 O=n6_1
+.gate or2 a=n5_1 b=n6_1 O=n13_1
+
+.gate and2 a=a0 b=b0 O=n7_1
+.gate and2 a=c0 b=n13_1 O=n17_1
+.gate or2 a=n17_1 b=n7_1 O=n19_1
+
+.gate not a=n19_1 O=n21_1
+.gate not a=n14_1 O=n20_1
+.gate and2 a=n19_1 b=n20_1 O=n22_1
+.gate and2 a=n14_1 b=n21_1 O=n23_1
+.gate or2 a=n22_1 b=n23_1 O=s1
+
+.gate not a=a1 O=n4_1
+.gate not a=b1 O=n3_1
+.gate and2 a=n3_1 b=a1 O=n8_1
+.gate and2 a=b1 b=n4_1 O=n9_1
+.gate or2 a=n8_1 b=n9_1 O=n14_1
+
+.gate and2 a=a1 b=b1 O=n10_1
+.gate and2 a=n19_1 b=n14_1 O=n24_1
+.gate or2 a=n24_1 b=n10_1 O=n27_1
+
+.gate and2 a=n13_1 b=n14_1 O=n25_1
+.gate not a=n25_1 O=n28_1
+.gate and2 a=c0 b=n25_1 O=n29_1
+.gate and2 a=n27_1 b=n28_1 O=n30_1
+.gate or2 a=n29_1 b=n30_1 O=c2

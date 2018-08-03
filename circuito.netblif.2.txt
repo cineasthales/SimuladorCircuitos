@@ -1,0 +1,4 @@
+.inputs i0 i1 i2
+.outputs s0
+.gate xor2 a=i0 b=i1 O=n1
+.gate and2 a=n1 b=i2 O=s0

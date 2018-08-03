@@ -1,0 +1,91 @@
+.inputs c0 a0 b0 a1 b1 a2 b2 a3 b3
+.outputs s0 s1 s2 s3 c4
+
+.gate not a=a0 O=n1_1
+.gate not a=b0 O=n1_2
+.gate and2 a=a0 b=n1_2 O=n1_3
+.gate and2 a=b0 b=n1_1 O=n1_4
+.gate or2 a=n1_3 b=n1_4 O=p0
+
+.gate not a=p0 O=n1_6
+.gate not a=c0 O=n1_7
+.gate and2 a=p0 b=n1_7 O=n1_8
+.gate and2 a=c0 b=n1_6 O=n1_9
+.gate or2 a=n1_8 b=n1_9 O=s0
+
+.gate and2 a=a0 b=b0 O=g0
+.gate and2 a=c0 b=p0 O=n1_10
+.gate or2 a=g0 b=n1_10 O=c1
+
+
+.gate not a=a1 O=n2_1
+.gate not a=b1 O=n2_2
+.gate and2 a=a1 b=n2_2 O=n2_3
+.gate and2 a=b1 b=n2_1 O=n2_4
+.gate or2 a=n2_3 b=n2_4 O=p1
+
+.gate not a=p1 O=n2_6
+.gate not a=c1 O=n2_7
+.gate and2 a=p1 b=n2_7 O=n2_8
+.gate and2 a=c1 b=n2_6 O=n2_9
+.gate or2 a=n2_8 b=n2_9 O=s1
+
+.gate and2 a=a1 b=b1 O=g1
+.gate and2 a=p0 b=p1 O=n2_10
+.gate and2 a=c0 b=n2_10 O=n2_11
+.gate and2 a=g0 b=p1 O=n2_12
+.gate or2 a=g1 b=n2_12 O=n2_13
+.gate or2 a=n2_11 b=n2_13 O=c2
+
+.gate not a=a2 O=n3_1
+.gate not a=b2 O=n3_2
+.gate and2 a=a2 b=n3_2 O=n3_3
+.gate and2 a=b2 b=n3_1 O=n3_4
+.gate or2 a=n3_3 b=n3_4 O=p2
+
+.gate not a=p2 O=n3_6
+.gate not a=c2 O=n3_7
+.gate and2 a=p2 b=n3_7 O=n3_8
+.gate and2 a=c2 b=n3_6 O=n3_9
+.gate or2 a=n3_8 b=n3_9 O=s2
+
+.gate and2 a=a2 b=b2 O=g2
+.gate and2 a=c0 b=p0 O=n3_10
+.gate and2 a=p1 b=p2 O=n3_11
+.gate and2 a=n3_10 b=n3_11 O=n3_12
+.gate and2 a=p1 b=p2 O=n3_13
+.gate and2 a=g0 b=n3_13 O=n3_14
+.gate and2 a=g1 b=p2 O=n3_15
+.gate or2 a=n3_12 b=n3_14 O=n3_16
+.gate or2 a=g2 b=n3_15 O=n3_17
+.gate or2 a=n3_16 b=n3_17 O=c3
+
+
+.gate not a=a3 O=n4_1
+.gate not a=b3 O=n4_2
+.gate and2 a=a3 b=n4_2 O=n4_3
+.gate and2 a=b3 b=n4_1 O=n4_4
+.gate or2 a=n4_3 b=n4_4 O=p3
+
+.gate not a=p3 O=n4_6
+.gate not a=c3 O=n4_7
+.gate and2 a=p3 b=n4_7 O=n4_8
+.gate and2 a=c3 b=n4_6 O=n4_9
+.gate or2 a=n4_8 b=n4_9 O=s3
+
+.gate and2 a=a3 b=b3 O=g3
+.gate and2 a=c0 b=p0 O=n4_10
+.gate and2 a=p1 b=p2 O=n4_11
+.gate and2 a=n4_10 b=n4_11 O=n4_12
+.gate and2 a=p3 b=n4_12 O=n4_13
+.gate and2 a=g0 b=p1 O=n4_14
+.gate and2 a=p2 b=p3 O=n4_15
+.gate and2 a=n4_14 b=n4_15 O=n4_16
+.gate and2 a=g1 b=p2 O=n4_17
+.gate and2 a=p3 b=n4_17 O=n4_18
+.gate and2 a=g2 b=p3 O=n4_19
+.gate or2 a=n4_13 b=n4_16 O=n4_20
+.gate or2 a=n4_18 b=n4_19 O=n4_21
+.gate or2 a=n4_20 b=n4_21 O=n4_22
+.gate or2 a=g3 b=n4_22 O=c4
+
